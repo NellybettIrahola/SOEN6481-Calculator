@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lachaise Assignment
+% LaTeX Template
+% Version 1.0 (26/6/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Marion Lachaise & François Févotte
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-2cm}The Champernowne Constant (C10)} % Title of the assignment
+
+\author{Nellybett Irahola\\ \texttt{ID \#40079991}} % Author name and email address
+
+\date{Concordia University--- July 5, 2019} % University, school and/or department name(s) and a date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{Description} % Unnumbered section
+
+The Champernowne Constant was formulated in 1993 and it is named after it creator Gawen Champernowne, an English mathematician and economist who built a chess computer with Alan Turing (a friend from his undergrad in King’s College, Cambridge), found mistakes in John Maynard Keynes's "General Theory of Employment, Interest and Money", worked as a programme director in the Ministry of Aircraft Production and was professor in multiple universities [1].  
+
+It is a number that can be created by concatenating the positive integers and interpreting them as decimal digits to the right of a decimal point. i.e., 0.123456789101112…, it does not end. For any r, the base r Champernowne number is normal in the base r (a number is said to be normal in base b if its digits in base b follow a uniform distribution) [2]. However, the question of its normality in any other base (not a power of r) is open. For example, it is not known whether the base 10 Champernowne number is normal in the base 2. Kurt Mahler also proved that the number is also transcendental (number that is not the root of any integer polynomial, meaning that it is not an algebraic number of any degree) [3]. 
+
+Champernowne’s constants can also be constructed in other bases. The base-2 and base-3 Champernowne’s constants are known as the binary and ternary Champernowne’s constants respectively. An example of its construction is C2=0.1101110010111011... (base-2 Champernowne constant). A nested sum for the b-ary Champernowne constant is given by [4]:
+
+\includegraphics [scale=0.7]{images/formula.png} 
+
+\section*{Characteristics and Applications} % Unnumbered section
+
+The Champernowne’s constant has two important characteristics. First, any pattern of digits, no matter the content or length, will eventually appear in C10 [5].  An example of this is the number 456789 that occurs at position 2629624. In fact, the location of the pattern may be calculated [6][7]. Second, the nature of the Continued Fraction Expansion coefficients (CFE) of C10. The CFE consists mostly of coefficients with a reasonably small number of digits, interspersed with coefficients with a very large number of digits [8].
+
+Some of the applications of the Champernowne’s constant include the use of its characteristics like the possibility to find every possible phrase (translated in binary string). For example, you can combine a normal number with some kind of instructions to find and extract that exactly matches the first Harry Potter novel (this is a copyright violation, but it is an interesting application). Additionally, it is also use by the comparison of the behavior of its digits with other numbers or elements. For example, if we compare a walk on the digits of Champernowne’s number with a walk on the nucleotides of a chromosome, such as the the X chromosome produces a similarly patterned image to the walk on the digits of Champernowne’s number [8].
+
+%----------------------------------------------------------------------------------------
+\begin{thebibliography}{9}
+
+\bibitem{website} 
+Champernowne Constant. (2019). Retrieved from: \\\texttt{http://oeis.org/search?q=Champernowne+constant\&sort=\&language=\&go=Search}
+
+\bibitem{bib} 
+D.G. Champernowne, The Construction of Decimals Normal in the Scale of Ten, J. London Math. Soc. 8, 1933, p. 254-260.
+ 
+\bibitem{bib1} 
+K. Mahler, Arithmetische Eigenschaften einer Klasse von Dezimalbrüchen, Proc. Konin. Neder. Akad. Wet. Ser. A. 40, 1937, p. 421-428.
+ 
+
+\bibitem{website1} 
+Transcendental Number. (2019). Retrieved from:  \\\texttt{http://mathworld.wolfram.com/TranscendentalNumber.html}
+
+\bibitem{bib2} 
+H. Von Baeyer, Information: The New Language of Science, Weidenfeld and Nicolson, Great Britain, 2003, p. 101-102, 104, 123-124. 
+
+\bibitem{website2} 
+Champernowne Constant. (2019). Retrieved from:  \\\texttt{http://www.infiniteabyss.org/2010/02/11/an\_interesting\_property\_of\_champernownes\_number.html}
+
+\bibitem{website3} 
+Champernowne Constant cfe Coefficient Calculation. (2019). Retrieved from: \\\texttt{http://code.google.com/p/champernowne-constant-cfe-coefficient-calculationhwm/downloads/list find\_num\_pos.rb}
+
+\bibitem{website4} 
+On the High Water Mark Convergents of Champernowne’s Constant in Base Ten. (2019). Retrieved from: \\\texttt{https://arxiv.org/pdf/1210.1263.pdf}
+
+\bibitem{website5} 
+AN INTERESTING PROPERTY OF CHAMPERNOWNE'S NUMBER.  (2019). Retrieved from: \\\texttt{https://www.kanonical.io/an\_interesting\_property\_of\_champernownes\_number/}
+\end{thebibliography}
+
+\end{document}
