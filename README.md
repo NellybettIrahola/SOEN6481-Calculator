@@ -1,7 +1,7 @@
 
-##The Champernowne Constant (C10)
-### Nellybett Irahola
-### ID 40079991
+## The Champernowne Constant (C10)
+Nellybett Irahola
+ID 40079991
 
 ### Description
 
