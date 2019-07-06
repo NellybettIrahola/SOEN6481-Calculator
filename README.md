@@ -1,9 +1,9 @@
 
-## The Champernowne Constant (C10)
-Nellybett Irahola
-ID 40079991
+# The Champernowne Constant (C10)
 
-### Description
+Nellybett Irahola, ID:40079991
+
+## Description
 
 The Champernowne Constant was formulated in 1993 and it is named after it creator Gawen Champernowne, an English mathematician and economist who built a chess computer with Alan Turing (a friend from his undergrad in King’s College, Cambridge), found mistakes in John Maynard Keynes's "General Theory of Employment, Interest and Money", worked as a programme director in the Ministry of Aircraft Production and was professor in multiple universities.  
 
@@ -13,7 +13,7 @@ Champernowne’s constants can also be constructed in other bases. The base-2 an
 
 ![alt text](https://github.com/NellybettIrahola/SOEN6481-Calculator/blob/master/Champernowne%20Constant/images/formula.png)
 
-### Characteristics and Applications
+## Characteristics and Applications
 
 The Champernowne’s constant has two important characteristics. First, any pattern of digits, no matter the content or length, will eventually appear in C10.  An example of this is the number 456789 that occurs at position 2629624. In fact, the location of the pattern may be calculated. Second, the nature of the Continued Fraction Expansion coefficients (CFE) of C10. The CFE consists mostly of coefficients with a reasonably small number of digits, interspersed with coefficients with a very large number of digits.
 
