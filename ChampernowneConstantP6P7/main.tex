@@ -1,0 +1,330 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lachaise Assignment
+% LaTeX Template
+% Version 1.0 (26/6/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Marion Lachaise & François Févotte
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{report}
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-2cm}CALCULATOR: The Champernowne Constant (C10)} % Title of the assignment
+
+\author{Nellybett Irahola\\ \texttt{ID \#40079991}} % Author name and email address
+
+\date{Concordia University--- July 19, 2019} % University, school and/or department name(s) and a date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+
+\tableofcontents{}
+
+
+%----------------------------------------------------------------------------------------
+%	BODY
+%----------------------------------------------------------------------------------------
+\chapter{PROBLEMS}
+
+\section{PROBLEM 6: User Stories}
+
+\subsection{Description}
+
+The user stories' information will be presented in two sections. The first one with a table containing the id, description, priority, frequency of use, category and estimation. The estimation point of reference is one day which is represented by 8. The scale is defined using the fibonacci numbers.
+
+The range for the priority and frequency is like the one provided by the CalCentral project [1]. It uses three levels Low, Medium and High.
+
+The second section will present the constraints and acceptance test/criteria for the user stories. The constraints are presented by the relation with a non-functional requirement such as usability, flexibility, efficiency, security and others.
+
+\subsection{User Stories Characteristics}
+\begin{center}
+\begin{tabular}{ | m{2.7em} | m{8cm}| m{1.8cm} | m{1.5cm} | m{1.5cm} | m{1.5cm} |} 
+\hline
+ID & User Story Description & Category & Priority & Frequency & Estimation \\ 
+\hline
+EN-US-1 & A student can use the calculator to show the decimal expansion of the Champernowne Constant in different bases, so he can get a better understanding of its behaviour for their research. & Research \& Learning & High & High & 5\\ 
+\hline
+EN-US-2 & A Number's Theory specialist can use the calculator to verify the presence of a numeric pattern in the Champernowne Constant, so they can confirm the characteristics of normal numbers and use it for their research. & Research & Medium & Low & 3 \\ 
+\hline
+EN-US-3 & A student can use the calculator to encrypt messages using a substitution cipher based on the number, so they can use it for their projects. & Learning \& Security & High & High & 5 \\ 
+\hline
+EN-US-4 & A student can use the calculator to decrypt messages using a substitution cipher based on the number and a key, so they can use it for their projects. & Learning \& Security & High & High & 5 \\ 
+\hline
+EN-US-5 & A student can use the calculator to encrypt messages using a one-time pad cipher based on the number, so they can use it for their projects. & Learning \& Security & High & High & 8 \\ 
+\hline
+EN-US-6 & A student can use the calculator to decrypt messages using a one-time pad cipher based on the number, so they can use it for their projects. & Learning \& Security & High & High & 8 \\ 
+\hline
+EN-US-7 & A student can use the calculator to perform elementary arithmetic operations that involve the number, so he can use it for specific calculations in his work. & Learning \& Research & Medium & Low & 8 \\ 
+\hline
+EN-US-8 & A Number's Theory specialist can use the calculator to show the continued fraction expansion of the Champernowne Constant, so they evaluate some characteristics of the number and use it for their research. & Learning \& Research & Low & Low & 2 \\ 
+\hline
+EN-US-9 & A software engineer can use the calculator to show random numbers generated base on the Champernowne Constant, so they can use it for some interface features in their systems. & Learning \& Work & Low & Low & 3 \\ 
+\hline
+EN-US-10 & A student can use the calculator to show a graph of the number, so they can study their behaviour for their research. & Learning \& Research & Medium & Low & 5 \\ 
+\hline
+ 
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{User Stories Constraints and Acceptance Test} 
+\begin{enumerate}
+    \item \underline{\textbf{EN-US-1 }}: A student can use the calculator to show the decimal expansion of the Champernowne Constant in different bases, so he can get a better understanding of its behaviour for their research. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Usability: it represents how easy is for the user to learn, operate, prepare inputs, and interpret outputs through interaction with a system. It is important that the system provide default values for the base a number of decimals to show. The system should also provide a maximum number of decimals since the device process resources are limited (Champernowne Constant is an infinite number) and the screen size varies per device. 
+    \item Flexibility: the system should allow to select multiple bases for the number. 
+    \item Efficiency: the system should show the number in 2 second after the requirement was made, since response time is really important for the users. \\ \newline
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T1: if the user selects the Champernowne Constant with only one decimal the system should show it.  
+    \item T2: if the user doesn't select a base or number of decimals, the system should show the Champernowne Constant in base 10 with the maximum number of decimals.
+    \item T3: if the user selects a number of decimals that is not a integer or is higher than the maximun the system should show an error message.\newline
+\end{itemize}
+
+\item \underline{\textbf{EN-US-2}}: A Number's Theory specialist can use the calculator to verify the presence of a numeric pattern in the Champernowne Constant, so they can confirm the characteristics of normal numbers and use it for their research. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Efficiency: it takes time to find a numeric pattern in an infinite number, if the operation takes more than 30 seconds the sytem should give an error message. 
+    \item Flexibility: the system should allow to find the pattern in multiple bases of the Champernowne Constant. Usability: the pattern must contain only numeric values, the system must give an error message in other case.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T4: the system should return the position of the pattern if it exist in the maximun number of decimals of the Champernowne Constant provided by the system. \item T5: if the pattern is not found the system should provide a message. \newline
+\end{itemize}
+
+\item \underline{\textbf{EN-US-3}}:A student can use the calculator to encrypt messages using a substitution cipher based on the number, so they can use it for their projects. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Flexibility: not only the letters should be encrypted by the algorithm, the system should also provide encryption for common symbols. 
+    \item Confidentiality: only the user that encrypt the message should be provided with the key to decrypt it.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T6: as a result the message provided to the user should be encrypted following the cipher algorithm.
+    \item T7: the algorithm should provide an error message if a not-supported symbols appears in the message. \newline
+\end{itemize}
+
+\item \underline{\textbf{EN-US-4}}:A student can use the calculator to decrypt messages using a substitution cipher based on the number and a key, so they can use it for their projects. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Flexibility: not only the letters should be decrypted by the algorithm, the system should also provide encryptation for common symbols. 
+    \item Integrity: the decrypted message should be the same than the original message provided by the user before encryption.
+    \item Confidientiality: the message should only be decrypted if a valid key is provided.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T8: provided the right parameters the decrypted messages should be the same than the message before encryption.
+    \item T9: if the parameters are not correct, the system should show an error message.
+    \item T10: the algorithm should provide an error message if a not-supported symbols appears in the message.
+\end{itemize}
+
+\item \underline{\textbf{EN-US-5}}:A student can use the calculator to encrypt messages using a one-time pad cipher based on the number, so they can use it for their projects. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Flexibility: not only the letters should be encrypted by the algorithm, the system should decrypt the common symbols. 
+    \item Confidentiality: the procedure to encrypt the number must be confidential.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T11: as a result the message provided to the user should be encrypted following the one-time pad cipher algorithm.
+    \item T12: the algorithm should provide an error message if a not-supported symbols appears in the message. \newline
+\end{itemize}
+
+\item \underline{\textbf{EN-US-6}}:A student can use the calculator to decrypt messages using a one-time pad cipher based on the number, so they can use it for their projects. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Flexibility: not only the letters should be decrypted by the algorithm, the system should also take in consideration common symbols. 
+    \item Integrity: the decrypted message should be the same than the original message provided by the user before encryption.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T13: provided a valid encrypted message the decrypted messages should be the same than the message before encryption.
+    \item T14: the algorithm should provide an error message if a not-supported symbols appears in the message.\newline
+    
+\end{itemize}
+
+\item \underline{\textbf{EN-US-7}}: A student can use the calculator to perform elementary arithmetic operations that involve the number, so he can use it for specific calculations in his work. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Usability: the number should be represented by its symbol in the expression shown to the user. Additionally, the intermediate and final result should show the number of decimals specified by the user. Finally, an intermediate result should only be shown if equals is press by the user. 
+    \item Flexibility: the user should be able to input multiple operations as part of a mathematical expression. The system should provide symbols to clear the screen and re-initiate operations. 
+    \item Integrity: the result should represent the calculation of the mathematical expression provided by the user.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T14: the result must be the calculation of the mathematical expression.
+    \item T15: the system must show only the number of decimals specified by the user. \newline
+\end{itemize}
+
+\item \underline{\textbf{EN-US-8}}: A Number's Theory specialist can use the calculator to show the continued fraction expansion of the Champernowne Constant, so they evaluate some characteristics of the number and use it for their research. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Reliability: the system must show all the available elements of the fraction expansion.  
+    \item Usability: the user should be able to see for which bases is available the fraction expansion of the number. The system will only show elements with less than 200 numbers.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T16: the result must be the mathematical expansion in the specified base.\newline
+\end{itemize}
+
+\item \underline{\textbf{EN-US-9}}: A software engineer can use the calculator to show random numbers generated base on the Champernowne Constant, so they can use it for some interface features in their systems. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Usability: the user should be able to select the range for the random number that will be provided by the system, and the system should indicate what is the maximum value for the range. 
+    \item Flexibility: the system should provide ranges for positive and negative integers and indicate the type of format that is not supported by the system.
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T17: the result must be a number in the range provided by the user. \newline
+\end{itemize}
+
+\item \underline{\textbf{EN-US-10}}: A student can use the calculator to show a graph of the number, so they can study their behaviour for their research. \\ \newline
+\textbf{Constraints}
+\begin{itemize}
+    \item Flexibility: the user should be able to choose the type of graph and the base of the number.
+    \item Usability: the user should be able to copy the graph generated by the system, and select the information to be displayed (axis, tittle, and others).
+\end{itemize}
+
+\textbf{Acceptance Test}
+\begin{itemize}
+    \item T18: the result must be a graph of the number in the base specified by the user only showing the information required by the user. \newline
+\end{itemize}
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PROBLEM 7: Traceability Matrix }
+
+\subsection{Nomenclature}
+
+\begin{enumerate}
+    \item Use Cases
+    \begin{itemize}
+        \item ID: EN-UC-0 \\
+              Name: Calculate Champernowne Constant
+        \item ID: EN-UC-1 \\
+              Name: Show Number
+        \item ID: EN-UC-2 \\
+              Name: Find Numeric Pattern
+        \item ID: EN-UC-3 \\
+              Name: Encrypt Message
+        \item ID: EN-UC-4 \\
+              Name: Decrypt Message
+    \end{itemize}
+    
+    \item Interviews
+        \begin{itemize}
+        \item ID: EN-IN-1 \\
+              Interviewee Name: Hershy Kisilevsky
+        \item ID: EN-IN-2 \\
+              Interviewee Name: Daniel Morales
+        \end{itemize}
+    
+    \item Persona
+        \begin{itemize}
+        \item ID: EN-PE-1 \\
+              Name: David Wilson
+        \item ID: EN-PE-2 \\
+              Name: James Brown
+        \end{itemize}
+        
+    \item Articles
+        \begin{itemize}
+        \item ID: EN-AR-1 \\
+              Name: Transcendental Numbers and Cryptography \\
+              Link: http://www.m-hikari.com/ams/ams-2014/ams-173-176-2014/viswanathAMS173-176-2014.pdf
+        \item ID: EN-AR-2 \\
+              Name: A CIPHER BASED ON THE RANDOM SEQUENCE OF DIGITS IN IRRATIONAL NUMBERS \\
+              Link: http://www.iacis.org/iis/2016/1\_iis\_2016\_14-25.pdf
+        \item ID: EN-AR-3 \\
+              Name: Champernowne Constant \\
+              Link: http://mathworld.wolfram.com/ChampernowneConstant.html \\ \newline
+        \end{itemize}
+        
+\end{enumerate}
+\begin{center}
+\begin{tabular}{ | m{3em} | m{2cm}| m{2cm}| m{2cm}| m{3.5cm} | m{1.8cm} | m{2cm} |} 
+\cline{3-7}
+\multicolumn{2}{ c |}{}& Use Cases & User Stories & Interview & Persona & Reference Articles \\ 
+\hline
+\multirow {10}{2em}{User Stories} 
+& EN-US-1 & EN-UC-0, EN-UC-1 & & EN-IN-1.Question4 & EN-PE-2 & \\ \cline{2-7}  
+& EN-US-2 & EN-UC-0, EN-UC-2 & & EN-IN-1.Question5, EN-IN-2.Question10 & EN-PE-1, EN-PE-2 & \\ \cline{2-7}
+& EN-US-3 & EN-UC-0, EN-UC-3 &  & EN-IN-2.Question6,  EN-IN-2.Question8 & EN-PE-1 & EN-AR-1\\ \cline{2-7}
+& EN-US-4 & EN-UC-0, EN-UC-4 & & EN-IN-2.Question6,  EN-IN-2.Question8 & EN-PE-1 & EN-AR-1\\ \cline{2-7}
+& EN-US-5 &  &  & EN-IN-2.Question6,  EN-IN-2.Question8 & EN-PE-1 & EN-AR-2\\ \cline{2-7}
+& EN-US-6 &  &  & EN-IN-2.Question6,  EN-IN-2.Question8 & EN-PE-1 & EN-AR-2\\ \cline{2-7}
+& EN-US-7 &  & EN-US-1  & EN-IN-2.Question10,  EN-IN-2.Question11 & EN-PE-1 & \\ \cline{2-7}
+& EN-US-8 &  & & EN-IN-1.Question4 & EN-PE-2 & \\ \cline{2-7}
+& EN-US-9 &  &  & EN-IN-1.Question8 & EN-PE-2 & \\ \cline{2-7}
+& EN-US-10 &  &  & &  & EN-AR-3\\ 
+
+\hline
+\end{tabular}
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{thebibliography}{9}
+
+\bibitem{website1} 
+P. Kantham. USER STORIES IN CONTEXT.(2019). Retrieve from:
+\\\texttt{https://users.encs.concordia.ca/~kamthan/courses/soen-6481/user\_stories\_context.pdf}
+
+
+\bibitem{website2} 
+P. Kantham. USER STORIES IN CONTEXT.(2019). Retrieve from:
+\\\texttt{https://users.encs.concordia.ca/~kamthan/courses/soen-6481/user\_stories\_context.pdf}
+
+\bibitem{website3}
+P. Kantham. TRACEABILITY IN SOFTWARE REQUIREMENTS. (2019). Retrieve from:
+\\\texttt{https://users.encs.concordia.ca/\~kamthan/courses/soen-6481/software\_requirements\_traceability.pdf}
+
+\bibitem{website4}
+P. Kantham. 1INTRODUCTION TO SOFTWARE PRODUCT QUALITY. (2019). Retrieve from:
+\\\texttt{https://users.encs.concordia.ca/\~kamthan/courses/soen-6481/software\_product\_quality\_introduction.pdf}
+
+\bibitem{website5}
+M.K. Viswanath. Transcendental Numbers and Cryptography. (2019). Retrieve from:
+\\\texttt{http://www.m-hikari.com/ams/ams-2014/ams-173-176-2014/viswanathAMS173-176-2014.pdf}
+
+\bibitem{website6}
+J. L. González-Santander. A CIPHER BASED ON THE RANDOM SEQUENCE OF DIGITS IN IRRATIONAL NUMBERS. (2019). Retrieve from:
+\\\texttt{http://www.iacis.org/iis/2016/1\_iis\_2016\_14-25.pdf}
+
+\end{thebibliography}
+
+\end{document}
