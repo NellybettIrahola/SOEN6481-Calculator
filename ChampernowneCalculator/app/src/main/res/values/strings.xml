@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Eternity Numbers</string>
-    <string name="tab_text_1">Decimal expansion</string>
-    <string name="spinner_text_1">Substitution</string>
-    <string name="spinner_text_2">OneTimePad</string>
-    <string name="tab_text_3">Encrypt Message</string>
-    <string name="tab_text_4">Decrypt Message</string>
-</resources>
